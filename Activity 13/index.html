@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Activity 13: on-line off-line, who cares?</title>
+  </head>
+  <body>
+    <h1>Activity 13: on-line off-line, who cares?</h1>
+    <p>
+      On this activity we will be continuosly fetching data, and saving it to the browser,
+      in case we detect a connection lost or a fetch fail we will retrieve the saved data
+      instead to make the app seamlessly work:
+    </p>
+      <ol>
+        <li>Fetch employees.json:</li>
+        <li>If success: save the result to the localStorage</li>
+        <li>If failed: retrieve previous data from the localStorage</li>
+        <li>If no data: show a warning alert component with the text: "No data" for 5 seconds</li>
+        <li>If data from server: show a success alert component with the text: "Data fetched, X elements found" for 5 seconds</li>
+        <li>If data from localStorage: show a warning alert component with the text: "Data cached, X elements found" for 5 seconds</li>
+        <li>And repeat</li>
+      </ol>
+      <ul>
+        <li>Don't forget to check navigator online attribute and capture fetch errors</li>
+      </ul>
+  </body>
+</html>
